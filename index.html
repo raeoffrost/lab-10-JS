@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lab 10: JavaScript API Calls</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <section>
+        <div>
+        <h1>Buttons</h1>
+        <div>
+            <div>
+                <button id="fetch">Fetch Data with fetch()</button>
+            </div>
+        </div>
+        <div>
+            <div>
+                <button id="xhr">Fetch Data with XHR</button>
+            </div>
+        </div>
+    </div>
+    <div>
+       
+        <h1>Post Input Form</h1>
+        
+        <form id="form">
+            <label>Post ID for Updating</label>
+            <input type="text" name="id" aria-label="Post ID" id="id">
+            <label>Title</label>
+            <input type="text" name="title" aria-label="Title" id="title" required="">
+            <label>Post Body</label>
+            <textarea name="body" aria-label="Post Body" rows="4" cols="50" id="body" required=""></textarea>
+            <div>
+                <input type="submit" value="Submit Post" aria-label="Submit Post" class="button" id="save-btn">
+                <input type="button" value="Update Post" aria-label="Update Post" class="button" id="update-btn">
+            </div>
+        </form>
+        <span id="alert"></span>
+    </div>
+    </section>
+    <section>
+        <div id="postDisplay">
+        <h1>Post Display</h1>
+        <div id="output">
+            <p id="display-id">Post ID<p>
+            <h3 id="display-title">Nothing to show yet</h3>
+            <span id="display-body">Input post or press a button to see content.</span>
+        </div>
+    </div>
+    </section>
+  </body>
+</html>
